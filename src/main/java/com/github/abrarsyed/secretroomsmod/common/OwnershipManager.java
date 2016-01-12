@@ -253,7 +253,6 @@ public class OwnershipManager
     {
         File save = getSaveFile(world);
         int dimid = world.provider.dimensionId;
-        LOG.debug("Saving ownership data for dimension {} to {}", dimid, save);
 
         Map<BlockLocation, UUID> map = ownership.get(dimid);
         
